@@ -1,0 +1,16 @@
+.gradient-text {
+    background-image: linear-gradient(to bottom right, #fbcfe8, #d6d3f4); /* ваш градиент */
+    -webkit-background-clip: text;  /* для поддержки в Webkit-браузерах (Chrome, Safari, etc.) */
+    background-clip: text;  /* основной стандартный стиль */
+    color: transparent;  /* делает текст прозрачным, чтобы виден был только градиент */
+}
+#about {
+    background-color: #f8f9fa; /* Светлый фон */
+    padding: 60px 0; /* Отступы сверху и снизу */
+}
+
+.container {
+    max-width: 800px; /* Ограничиваем максимальную ширину текста */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    padding: 0 20px; /* Добавляем немного отступов по бокам */
+}

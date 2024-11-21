@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1440px, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</head>
+<body>
+    <!-- Верхний бар -->
+    <div class="header__top-bar">
+        <p class="header__top-bar-text">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! 
+            <span class="shop-now">Shop Now</span>
+        </p>
+        <div class="language">
+            English 
+            <span class="iconify" data-icon="ic:baseline-keyboard-arrow-down"></span>
+        </div>
+    </div>
+
+    <!-- Основной хедер -->
+    <header class="header">
+        <div class="container header__content">
+            <!-- Логотип -->
+            <div class="header__logo">
+                <img src="./images/Logo.png" alt="Exclusive" width="118" height="24">
+            </div>
+
+            <!-- Навигация -->
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#" class="header__link active">Home</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                    <li class="header__item"><a href="#" class="header__link">About</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Sign Up</a></li>
+                </ul>
+            </nav>
+
+            <!-- Поиск и иконки -->
+            <div class="header__search-icons">
+                <input type="text" class="search-bar" placeholder="What are you looking for?">
+                <i class="iconify" data-icon="ic:round-search" width="32" height="32"></i>
+                <i class="iconify" data-icon="ph:heart-light" width="32" height="32"></i>
+                <i class="iconify" data-icon="ph:shopping-cart-light" width="32" height="32"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar__list">
+                <li class="sidebar__item">Woman's Fashion <span class="iconify" data-icon="ic:round-keyboard-arrow-right"></span></li>
+                <li class="sidebar__item">Men's Fashion <span class="iconify" data-icon="ic:round-keyboard-arrow-right"></span></li>
+                <li class="sidebar__item">Electronics</li>
+                <li class="sidebar__item">Home & Lifestyle</li>
+                <li class="sidebar__item">Medicine</li>
+                <li class="sidebar__item">Sports & Outdoor</li>
+                <li class="sidebar__item">Baby's & Toys</li>
+                <li class="sidebar__item">Groceries & Pets</li>
+                <li class="sidebar__item">Health & Beauty</li>
+            </ul>
+        </aside>
+
+        <!-- Контент -->
+        <section class="main-content">
+            <div class="banner">
+                <div class="banner__info">
+                    <p class="banner__title">iPhone 14 Series</p>
+                    <p class="banner__subtitle">Up to 10% off Voucher</p>
+                    <a href="#" class="banner__button">Shop Now →</a>
+                </div>
+                <img src="./images/iphone_14.png" alt="iPhone 14" class="banner__image">
+            </div>
+        </section>
+    </main>
+
+    <section class="flash-sales">
+        <div class="flash-sales__header">
+            <p class="flash-sales__today">Today's</p>
+            <h2 class="flash-sales__title">Flash Sales</h2>
+            <div class="flash-sales__timer">
+                <div class="time">
+                    <span class="time__number">03</span>
+                    <span class="time__label">Days</span>
+                </div>
+                <span class="colon">:</span>
+                <div class="time">
+                    <span class="time__number">23</span>
+                    <span class="time__label">Hours</span>
+                </div>
+                <span class="colon">:</span>
+                <div class="time">
+                    <span class="time__number">19</span>
+                    <span class="time__label">Minutes</span>
+                </div>
+                <span class="colon">:</span>
+                <div class="time">
+                    <span class="time__number">56</span>
+                    <span class="time__label">Seconds</span>
+                </div>
+            </div>
+        </div>
+        <div class="flash-sales__products">
+            <!-- Карточка товара -->
+            <div class="product-card">
+                <div class="product-card__badge">-40%</div>
+                <img src="./images/sales_1.png" alt="Gamepad" class="product-card__image">
+                <div class="product-card__icons">
+                    <i class="iconify" data-icon="ph:heart-light"></i>
+                    <i class="iconify" data-icon="ph:eye-light"></i>
+                </div>
+                <p class="product-card__name">HAVIT HV-G92 Gamepad</p>
+                <div class="product-card__prices">
+                    <span class="product-card__price">$120</span>
+                    <span class="product-card__old-price">$160</span>
+                </div>
+                <div class="product-card__stars">⭐ ⭐ ⭐ ⭐ ⭐ <span>(88)</span></div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__badge">-35%</div>
+                <img src="./images/sales_2.png" alt="Keyboard" class="product-card__image">
+                <div class="product-card__icons">
+                    <i class="iconify" data-icon="ph:heart-light"></i>
+                    <i class="iconify" data-icon="ph:eye-light"></i>
+                </div>
+                <p class="product-card__name">AK-900 Wired Keyboard</p>
+                <div class="product-card__prices">
+                    <span class="product-card__price">$960</span>
+                    <span class="product-card__old-price">$1160</span>
+                </div>
+                <div class="product-card__stars">⭐ ⭐ ⭐ ⭐ ⭐ <span>(75)</span></div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__badge">-30%</div>
+                <img src="./images/sales_3.png" alt="Monitor" class="product-card__image">
+                <div class="product-card__icons">
+                    <i class="iconify" data-icon="ph:heart-light"></i>
+                    <i class="iconify" data-icon="ph:eye-light"></i>
+                </div>
+                <p class="product-card__name">IPS LCD Gaming Monitor</p>
+                <div class="product-card__prices">
+                    <span class="product-card__price">$370</span>
+                    <span class="product-card__old-price">$400</span>
+                </div>
+                <div class="product-card__stars">⭐ ⭐ ⭐ ⭐ ⭐ <span>(99)</span></div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__badge">-25%</div>
+                <img src="./images/sales_4.png" alt="Chair" class="product-card__image">
+                <div class="product-card__icons">
+                    <i class="iconify" data-icon="ph:heart-light"></i>
+                    <i class="iconify" data-icon="ph:eye-light"></i>
+                </div>
+                <p class="product-card__name">S-Series Comfort chair</p>
+                <div class="product-card__prices">
+                    <span class="product-card__price">$375</span>
+                    <span class="product-card__old-price">$400</span>
+                </div>
+                <div class="product-card__stars">⭐ ⭐ ⭐ ⭐ ⭐ <span>(99)</span></div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__badge">-25%</div>
+                <img src="./images/sales_4.png" alt="Chair" class="product-card__image">
+                <div class="product-card__icons">
+                    <i class="iconify" data-icon="ph:heart-light"></i>
+                    <i class="iconify" data-icon="ph:eye-light"></i>
+                </div>
+                <p class="product-card__name">S-Series Com</p>
+                <div class="product-card__prices">
+                    <span class="product-card__price">$375</span>
+                    <span class="product-card__old-price">$400</span>
+        </div>
+        <button class="flash-sales__view-all">View All Products</button>
+    </section>
+    
+    <!-- Categories Section -->
+    <div class="categories">
+        <div class="section-title">
+          <h2>Browse By Category</h2>
+        </div>
+        <div class="categories-grid">
+          <div class="category-card">
+            <img src="images/CellPhone.png" alt="Phones">
+            <span>Phones</span>
+          </div>
+          <div class="category-card">
+            <img src="images/Computer.png" alt="Computers">
+            <span>Computers</span>
+          </div>
+          <div class="category-card">
+            <img src="images/SmartWatch.png" alt="SmartWatch">
+            <span>SmartWatch</span>
+          </div>
+          <div class="category-card active">
+            <img src="images/Camera.png" alt="Camera">
+            <span>Camera</span>
+          </div>
+          <div class="category-card">
+            <img src="images/Headphone.png" alt="HeadPhones">
+            <span>HeadPhones</span>
+          </div>
+          <div class="category-card">
+            <img src="images/Gamepad.png" alt="Gaming">
+            <span>Gaming</span>
+          </div>
+        </div>
+        <div class="arrows">
+          <button class="arrow">&larr;</button>
+          <button class="arrow">&rarr;</button>
+        </div>
+      </div>
+  
+      <!-- Products Section -->
+      <div class="products">
+        <div class="section-title">
+          <h2>Best Selling Products</h2>
+        </div>
+        <div class="view-all">
+          <a href="#">View All</a>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="images/coat.png" alt="The North Coat">
+            <p>The north coat</p>
+            <p>
+              <span class="price">$260</span>
+              <span class="old-price">$360</span>
+            </p>
+            <div class="rating">★★★★★ (65)</div>
+          </div>
+          <div class="product-card">
+            <img src="images/bag.png" alt="Gucci Duffle Bag">
+            <p>Gucci duffle bag</p>
+            <p>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </p>
+            <div class="rating">★★★★★ (65)</div>
+          </div>
+          <div class="product-card">
+            <img src="images/cooler.png" alt="RGB Liquid CPU Cooler">
+            <p>RGB liquid CPU Cooler</p>
+            <p>
+              <span class="price">$160</span>
+              <span class="old-price">$170</span>
+            </p>
+            <div class="rating">★★★★★ (65)</div>
+          </div>
+          <div class="product-card">
+            <img src="images/bookself.png" alt="Small BookShelf">
+            <p>Small BookShelf</p>
+            <p>
+              <span class="price">$360</span>
+            </p>
+            <div class="rating">★★★★★ (65)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Контент_2 -->
+        <section class="second-content">
+            <div class="banner">
+                <div class="banner__info">
+                    <p class="banner__title">Categories</p>
+                    <p class="banner__subtitle">Enhance Your Music Experience</p>
+                    <a href="#" class="banner__button">Buy Now!</a>
+                </div>
+                <img src="./images/JBL.png" alt="JBL" class="banner__image">
+            </div>
+        </section>
+    </main>
+
+     <!-- Products Section 3 -->
+     <div class="Our Products">
+        <div class="section-title">
+          <h2>Best Selling Products</h2>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="images/Dog food.png" alt="Dog Food">
+            <p>Breed Dry Dog Food</p>
+            <p>
+              <span class="price">$100</span></p>
+            <div class="rating">★★★★★ (35)</div>
+          </div>
+          <div class="product-card">
+            <img src="images/Canon camera.png" alt="Canon">
+            <p>CANON EOS DSLR Camera</p>
+            <p>
+              <span class="price">$360</span>
+            </p>
+            <div class="rating">★★★★★ (95)</div>
+          </div>
+          <div class="product-card">
+            <img src="images/laptop.png" alt="Laptop">
+            <p>ASUS FHD Gaming Laptop</p>
+            <p>
+              <span class="price">$700</span>
+            </p>
+            <div class="rating">★★★★★ (325)</div>
+          </div>
+          <div class="product-card">
+            <img src="images/product set.png" alt="Product Set">
+            <p>Curology Product Set</p>
+            <p>
+              <span class="price">$500</span>
+            </p>
+            <div class="rating">★★★★★ (145)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Products Section 4 -->
+<div class="section-title">
+</div>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="images/electric car.png" alt="Electric Car">
+        <p>Kids Electric Car</p>
+        <p>
+          <span class="price">$960</span></p>
+        <div class="rating">★★★★★ (65)</div>
+      </div>
+      <div class="product-card">
+        <img src="images/Soccer Cleats.png" alt="Soccer Cleats">
+        <p>Jr. Zoom Soccer Cleats</p>
+        <p>
+          <span class="price">$1160</span>
+        </p>
+        <div class="rating">★★★★★ (35)</div>
+      </div>
+      <div class="product-card">
+        <img src="images/USB gamepad.png" alt="USB Gamepad">
+        <p>GP11 Shooter USB Gamepad</p>
+        <p>
+          <span class="price">$660</span>
+        </p>
+        <div class="rating">★★★★★ (55)</div>
+      </div>
+      <div class="product-card">
+        <img src="images/Jacket.png" alt="Jacket">
+        <p>Quilted Satin Jacket</p>
+        <p>
+          <span class="price">$660</span>
+        </p>
+        <div class="rating">★★★★★ (55)</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<button class="flash-sales__view-all">View All Products</button>
+    
+
+<div class="featured">
+    <!-- Заголовок секции -->
+    <div class="section-title">
+      <h2>New Arrival</h2>
+    </div>
+  
+    <!-- Сетка товаров -->
+    <div class="featured-grid">
+      <!-- Крупный блок PlayStation 5 -->
+      <div class="featured-item large">
+        <div class="featured-bg">
+        <img src="images/ps5.png" alt="PlayStation 5">
+        <div class="featured-content">
+          <h3>PlayStation 5</h3>
+          <p>Black and White version of the PS5 coming out on sale.</p>
+          <a href="#">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+      <!-- Женская коллекция -->
+      <div class="featured-item medium">
+        <div class="featured-bg">
+        <img src="images/women.png" alt="Women's Collection">
+        <div class="featured-content">
+          <h3>Women's Collections</h3>
+          <p>Featured woman collections that give you another vibe.</p>
+          <a href="#">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+      <!-- Колонки -->
+      <div class="featured-item small speakers">
+        <div class="featured-bg">
+        <img src="images/speakers.png" alt="Speakers">
+        <div class="featured-content">
+          <h3>Speakers</h3>
+          <p>Amazon wireless speakers.</p>
+          <a href="#">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+      <!-- Парфюм -->
+      <div class="featured-item small perfume">
+        <div class="featured-bg">
+        <img src="images/perfume.png" alt="Perfume">
+        <div class="featured-content">
+          <h3>Perfume</h3>
+          <p>GUCCI INTENSE OUD EDP.</p>
+          <a href="#">Shop Now</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <!-- Информационные блоки -->
+    <div class="features-info">
+      <div class="info-card">
+        <img src="images/delivery.png" alt="Free Delivery">
+        <h4>FREE AND FAST DELIVERY</h4>
+        <p>Free delivery for all orders over $140</p>
+      </div>
+      <div class="info-card">
+        <img src="images/support.png" alt="24/7 Support">
+        <h4>24/7 CUSTOMER SERVICE</h4>
+        <p>Friendly 24/7 customer support</p>
+      </div>
+      <div class="info-card">
+        <img src="images/money back.png" alt="Money Back Guarantee">
+        <h4>MONEY BACK GUARANTEE</h4>
+        <p>We return money within 30 days</p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

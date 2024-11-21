@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 10px;
+    max-width: 100%; 
+    margin: 0 auto;
+}
+.container img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: #585ab4;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.onepiece-info {
+    background-color: #66388b;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+}

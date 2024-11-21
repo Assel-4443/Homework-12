@@ -1,0 +1,586 @@
+/* Основные стили */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+/* Верхний бар */
+.header__top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding: 0 136px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+}
+
+.header__top-bar-text {
+    margin-left: 445px;
+    display: flex;
+    gap: 8px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Хедер */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 136px;
+    height: 80px;
+    background-color: #fff;
+}
+
+.header__logo img {
+    width: 118px;
+    height: 24px;
+    margin-left: 135px;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 190px;
+    font-size: 16px;
+}
+
+.header__search-icons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 118px;
+}
+
+.search-bar {
+    padding: 8px 12px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Вертикальная линия */
+.vertical-line {
+    position: absolute;
+    left: 503px;
+    top: 200px;
+    width: 1px;
+    height: 384px;
+    background-color: #9c9a9a;
+}
+
+/* Sidebar */
+.sidebar {
+    position: absolute;
+    top: 142px;
+    left: 135px;
+    width: 217px;
+    height: 344px;
+    background-color: #fff;
+}
+
+/* Контент */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 142px;
+    left: 428px;
+    background-color: #000;
+    width: 892px;
+    height: 344px;
+}
+
+.banner__info {
+color:#fff
+}
+.banner__image {
+    margin-right: 135px;
+}
+
+/* Flash Sales Section */
+.main-content {
+    margin-bottom: 140px; /* Отступ для разделения блоков */
+}
+.flash-sales {
+    margin: 0 135px 50px; /* Остальные отступы */
+}
+
+
+
+.flash-sales__header {
+    margin-bottom: 30px;
+}
+
+.flash-sales__today {
+    color: #FF4500;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.flash-sales__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.flash-sales__timer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time__number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.time__label {
+    font-size: 14px;
+    color: #888;
+}
+
+.colon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Cards Layout */
+.flash-sales__products {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px; /* Добавляем расстояние в 30px между карточками */
+}
+
+.product-card {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 220px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card__badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FF4500;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.product-card__image {
+    width: 190px;
+    height: 180px;
+}
+
+.product-card__icons {
+    position: absolute;
+    top: 10px; /* Расстояние от верхнего края */
+    right: 10px; /* Расстояние от правого края */
+    display: flex;
+    flex-direction: column; /* Иконки располагаются в столбик */
+    gap: 8px; /* Расстояние между иконками */
+}
+
+.product-card__icons i {
+    font-size: 20px; /* Размер иконок */
+    color: #888; /* Цвет иконок */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.product-card__icons i:hover {
+    color: #FF4500; /* Цвет иконок при наведении */
+}
+
+
+.product-card__name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card__prices {
+    display: flex;
+    gap: 10px;
+}
+
+.product-card__price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF4500;
+}
+
+.product-card__old-price {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.product-card__stars {
+    font-size: 14px;
+    color: #FFD700;
+    margin-top: 10px;
+}
+
+/* View All Button */
+.flash-sales__view-all {
+    margin-top: 40px; /* Отступ сверху, чтобы опустить кнопку */
+    width: 200px; /* Устанавливаем фиксированную ширину кнопки */
+    padding: 10px 20px;
+    background-color: #FF4500;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Центрирует кнопку по горизонтали */
+}
+
+
+.flash-sales__view-all:hover {
+    background-color: #E63900;
+}
+.flash-sales {
+    margin: 0 135px 50px; /* Отступы для flash sales */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px; /* Добавляем расстояние между карточками */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .section-title {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 15px;
+  }
+  
+  .section-title::before {
+    content: "";
+    width: 5px;
+    height: 20px;
+    background-color: #ff5252;
+    margin-right: 10px;
+    border-radius: 2px;
+  }
+  
+  .categories, .products {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .categories-grid, .products-grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    transition: box-shadow 0.2s;
+  }
+  
+  .category-card.active {
+    background: #ff5252;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .category-card img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff5252;
+  }
+  
+  .product-card .old-price {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 5px;
+  }
+  
+  .rating {
+    margin: 5px 0;
+    color: #ff9800;
+    font-size: 14px;
+  }
+  
+  .view-all {
+    text-align: right;
+    margin: 10px 0;
+  }
+  
+  .view-all a {
+    text-decoration: none;
+    color: #ff5252;
+    font-weight: bold;
+  }
+  
+  .arrows {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -30px;
+  }
+  
+  .arrow {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  .arrow:hover {
+    background: #f0f0f0;
+  }
+
+  .second-content {
+    width: 1170px;
+    height: 500px;
+    margin-bottom: px; /* Отступ для разделения блоков */
+}
+
+/* Featured Section */
+.featured {
+    margin: 40px 0;
+  }
+  
+  .section-title h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .featured-grid {
+    display: grid;
+    grid-template-columns: 570px 570px; /* 2 колонки */
+    grid-template-rows: auto auto; /* Два ряда */
+    gap: 32px 0; /* Расстояние 32px между рядами */
+    justify-content: center;
+}
+  .featured-item {
+    position: relative;
+  }
+  
+  .featured-item .featured-bg {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .featured-item img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .featured-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+  }
+  
+  .featured-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .featured-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .featured-content a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    background: #ff5252;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .featured-item.large {
+    grid-column: 1 / 2; /* PS5 в первой колонке */
+    grid-row: 1 / 2; /* PS5 в первой строке */
+    width: 570px;
+    height: 600px;
+    background-color: #000; /* Черный фон */
+}
+
+.featured-item.medium {
+    grid-column: 1 / 2; /* Women's Collection в первой колонке */
+    grid-row: 2 / 3; /* Women's Collection во второй строке */
+    width: 570px;
+    height: 284px;
+    background-color: #000; /* Черный фон */
+    margin-bottom: 32px; /* Расстояние между Women's Collection и Speakers/Perfume */
+}
+
+.featured-item.small.speakers {
+    grid-column: 2 / 3; /* Speakers во второй колонке */
+    grid-row: 2 / 3; /* Speakers во второй строке */
+    width: 270px;
+    height: 284px;
+    background-color: #000; /* Черный фон */
+    margin-top: 0; /* Убираем дополнительные отступы сверху */
+}
+
+.featured-item.small.perfume {
+    grid-column: 2 / 3; /* Perfume во второй колонке */
+    grid-row: 2 / 3; /* Perfume во второй строке */
+    width: 270px;
+    height: 284px;
+    background-color: #000; /* Черный фон */
+    margin-top: 32px; /* Расстояние между Perfume и Speakers */
+}
+  
+  /* Features Info Section */
+  .features-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .info-card {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    max-width: 300px;
+  }
+  
+  .info-card img {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .info-card h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .info-card p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .info-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  

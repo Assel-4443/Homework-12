@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+.flag {
+    display: grid; 
+    grid-template-rows: 2fr 1fr 1fr; 
+    width: 480px; 
+    height: 320px; 
+}
+
+.flag > div:nth-child(1) {
+    background-color: #FFD700; 
+}
+
+.flag > div:nth-child(2) {
+    background-color: #0033A0; 
+}
+
+.flag > div:nth-child(3) {
+    background-color: #CE1126; 
+}

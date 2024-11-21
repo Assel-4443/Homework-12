@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf9f6;
+            margin: 0;
+            padding: 50px;
+        
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            line-height: 50px;
+            margin-top: 60px;
+        }
+
+        h1 span {
+            color: midnightblue;
+        }
+
+        
+        .item {
+            width: 45%;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .item:last-child {
+            margin-right: 0;
+        }
+
+        img {
+           float: left;
+            width: 33%;
+            height: 200px;
+            margin-right: 50px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 20px;
+        }
+
+        .footer {
+            clear: both;
+            margin-top: 40px;
+            float: right;
+        }
+
+        @media (max-width: 680px) {
+            .container {
+            flex-direction: column;
+            align-items: center;
+        }
+            .item {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                float: none;
+                margin-right: 0;
+            }
+            h1 {
+                font-size: 28px;
+                line-height: 1.2;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="data:image/jpeg;base64,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" alt="50px" class="logo"> <br>
+        <h1>Дизайн Интерьера на <span>Ваш Вкус</span></h1>
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <img src="https://cdn2.divan.ru/img/v1/TGbw4diioQTvWsoS2tIHEzR7rhNv2qnToU99k-3GQjo/rs:fit:1920:1440:0:0/g:ce:0:0/bg:ffffff/q:85/czM6Ly9kaXZhbi9ja2VkaXRvci93aWtpLWFydGljbGUvMjU3MC82M2M1NWNjMmEyOTdjLmpwZw.jpg" alt="200px">
+            <h2>Дизайн Жилых Пространств</h2>
+            <p>Мы специализируемся на создании дизайнов для жилых помещений, будь то квартиры, дома или загородные дома. Мы учтем Ваши предпочтения, бюджет и потребности, чтобы создать интерьер, в котором Вы будете счастливы.</p>
+        </div>
+
+        <div class="item">
+            <img src="https://soprano.in.ua/storage/sefirstscreen/61d5748e6e09f1641378958.jpg" alt="200px">
+            <h2>Дизайн Коммерческих Помещений</h2>
+            <p>Наши услуги также охватывают дизайн коммерческих помещений. Мы поможем сделать Ваш офис, ресторан, магазин или другое коммерческое пространство стильным.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Мы готовы сделать Ваш интерьер лучше!</p>
+    </div>
+
+</body>
+</html>
