@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Selector</title>
+    <style>
+        #shapeContainer {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .shape {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle {
+            border-radius: 50%;
+        }
+        .square {
+            border-radius: 0;
+        }
+        .color-button {
+            width: 80px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+        .color-red {
+            background-color: #E32636;
+        }
+        .color-yellow {
+            background-color: #FDE910;
+            color: black;
+        }
+        .color-green {
+            background-color: #138808;
+        }
+        .color-blue {
+            background-color: #1560BD;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="selectShape('circle')">Круг</button>
+        <button onclick="selectShape('square')">Квадрат</button>
+    </div>
+    <div>
+        <button class="color-button color-red" onclick="changeColor('#E32636')">Красный</button>
+        <button class="color-button color-yellow" onclick="changeColor('#FDE910')">Желтый</button>
+        <button class="color-button color-green" onclick="changeColor('#138808')">Зеленый</button>
+        <button class="color-button color-blue" onclick="changeColor('#1560BD')">Синий</button>
+    </div>
+    <div>
+        <input type="text" id="shapeText" placeholder="Введите текст">
+        <button onclick="addText()">Добавить текст</button>
+    </div>
+    <div>
+        <button onclick="clearShape()">Очистить</button>
+    </div>
+    <div id="shapeContainer"></div>
+    <script src="12.js"></script>
+</body>
+</html>
